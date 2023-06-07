@@ -314,12 +314,12 @@ template {
 
 html {
   scroll-behavior: smooth;
+  font-size: 10px;
 }
 
 body {
   position: relative;
   overflow-x: hidden;
-  font-size: 10px;
   background-color: #242B33;
   color: #FFFFFF;
 }
@@ -356,4 +356,58 @@ a {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 13.8rem;
+  color: #FFFFFF;
+}
+.logo__title {
+  font-family: "Post No Bills Jaffna SemiBold", sans-serif;
+  font-size: 3.6rem;
+  line-height: 4.8rem;
+}
+.logo__sub {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.header {
+  padding-top: 3rem;
+}
+.header__wrapper {
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+}
+.nav__item:hover a {
+  color: #D4C17F;
+}
+.nav__item a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #FFFFFF;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease-in;
 }/*# sourceMappingURL=style.css.map */

@@ -4,12 +4,12 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 10px;
 }
 
 body {
   position: relative;
   overflow-x: hidden;
-  font-size: 10px;
   background-color: $color-primary;
   color: $color-white-2xl;
 }
@@ -45,4 +45,12 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
 }

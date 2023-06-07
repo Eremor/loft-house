@@ -1,0 +1,31 @@
+.header {
+  padding-top: 3rem;
+
+  &__wrapper {
+    align-items: center;
+  }
+}
+
+.nav {
+
+  &__list {
+    display: flex;
+    column-gap: 4rem;
+  }
+
+  &__item {
+
+    &:hover a {
+      color: $color-accent;
+    }
+
+    a {
+      @include font-raleway(400);
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+      color: $color-white-2xl;
+      letter-spacing: 0.05em;
+      transition: color 0.3s ease-in;
+    }
+  }
+}
