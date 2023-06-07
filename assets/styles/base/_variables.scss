@@ -1,0 +1,25 @@
+//colors
+$color-primary: #242B33;
+$color-accent: #D4C17F;
+$color-white-2xl: #FFFFFF;
+$color-grey: #BEBEBE;
+
+//fonts
+@mixin font-logo {
+  font-family: 'Post No Bills Jaffna SemiBold', sans-serif;
+}
+
+@mixin font-playfair {
+  font-family: 'Playfair', serif;
+  font-weight: 700;
+}
+
+@mixin font-raleway($weight) {
+  font-family: 'Raleway', sans-serif;
+  font-weight: $weight;
+}
+
+@mixin font-roboto {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
