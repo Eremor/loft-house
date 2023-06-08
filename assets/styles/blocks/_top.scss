@@ -1,13 +1,17 @@
 .top {
   margin-top: -9.2rem;
-  background: $gradient-top, url("../image/top-bg.jpg") center;
-  background-size: contain;
+  background: $gradient-top, url("../image/top-bg.jpg") center no-repeat;
+  background-size: cover;
 
   &__wrapper {
     padding-top: 29.6rem;
     padding-bottom: 7.4rem;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (max-width: 550px) {
+      padding-top: 25rem;
+    }
   }
 
   &__title {
@@ -18,6 +22,11 @@
     text-align: center;
     color: $color-accent;
 
+    @media screen and (max-width: 550px) {
+      font-size: 3.2rem;
+      line-height: 4.8rem;
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -27,14 +36,26 @@
       height: 4rem;
       background: url("../image/icons/mouse.svg");
       transform: translateX(-50%);
+
+      @media screen and (max-width: $media-tablet) {
+        display: none;
+      }
     }
   }
 
   &__contacts {
     margin-top: 32.1rem;
-    display: flex;justify-content: space-between;
-    column-gap: 10rem;
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    max-width: 63rem;
+    width: 100%;
+
+    @media screen and (max-width: 485px) {
+      flex-direction: column;
+      align-items: center;
+      min-height: 6rem;
+    }
   }
 
   &__link {
