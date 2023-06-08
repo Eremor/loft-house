@@ -1,0 +1,62 @@
+.top {
+  margin-top: -9.2rem;
+  background: $gradient-top, url("../image/top-bg.jpg") center;
+  background-size: contain;
+
+  &__wrapper {
+    padding-top: 29.6rem;
+    padding-bottom: 7.4rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    position: relative;
+    @include font-playfair;
+    font-size: 4.8rem;
+    line-height: 6.4rem;
+    text-align: center;
+    color: $color-accent;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -11rem;
+      left: 50%;
+      width: 4rem;
+      height: 4rem;
+      background: url("../image/icons/mouse.svg");
+      transform: translateX(-50%);
+    }
+  }
+
+  &__contacts {
+    margin-top: 32.1rem;
+    display: flex;justify-content: space-between;
+    column-gap: 10rem;
+    flex-wrap: wrap;
+  }
+
+  &__link {
+    padding-left: 3.5rem;
+    @include font-raleway(400);
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    color: $color-white-2xl;
+    background-position: left center;
+    background-repeat: no-repeat;
+    transition: color 0.3s ease-in;
+
+    &:hover {
+      color: $color-accent;
+    }
+
+    &--location {
+      background-image: url("../image/icons/placeholder.svg");
+    }
+
+    &--phone {
+      background-image: url("../image/icons/phone-call.svg");
+    }
+  }
+}

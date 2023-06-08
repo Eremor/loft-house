@@ -5,6 +5,8 @@ $color-white-2xl: #FFFFFF;
 $color-grey: #BEBEBE;
 $color-blackout: rgba(41, 41, 41, 0.6);
 
+$gradient-top: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%);
+
 //fonts
 @mixin font-logo {
   font-family: 'Post No Bills Jaffna SemiBold', sans-serif;
