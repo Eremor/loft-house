@@ -3,6 +3,7 @@ $color-primary: #242B33;
 $color-accent: #D4C17F;
 $color-white-2xl: #FFFFFF;
 $color-grey: #BEBEBE;
+$color-blackout: rgba(41, 41, 41, 0.6);
 
 //fonts
 @mixin font-logo {
@@ -23,3 +24,8 @@ $color-grey: #BEBEBE;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
+
+//media
+$media-desktop: 1280px;
+$media-tablet: 768px;
+$media-mobile: 320px;
