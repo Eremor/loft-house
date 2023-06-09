@@ -4,15 +4,29 @@
     padding-top: 12rem;
     padding-bottom: 12rem;
     justify-content: center;
+
+    @media screen and (max-width: 485px) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
   }
 
   &__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    row-gap: 4rem;
-    max-width: 78rem;
+    row-gap: 5rem;
+    max-width: 90rem;
     width: 100%;
+
+    @media screen and (max-width: 710px) {
+      max-width: 52rem;
+    }
+
+    @media screen and (max-width: 435px) {
+      max-width: 20rem;
+      justify-content: center;
+    }
   }
 
   &__item {
@@ -25,6 +39,10 @@
     color: $color-white-2xl;
     background-position: top center;
     background-repeat: no-repeat;
+
+    @media screen and (max-width: 710px) {
+      padding-top: 10.3rem;
+    }
 
     &:first-child {
       background-image: url("../image/icons/bench.svg");

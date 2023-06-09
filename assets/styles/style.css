@@ -589,13 +589,30 @@ a {
   padding-bottom: 12rem;
   justify-content: center;
 }
+@media screen and (max-width: 485px) {
+  .advantage__wrapper {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
 .advantage__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  row-gap: 4rem;
-  max-width: 78rem;
+  row-gap: 5rem;
+  max-width: 90rem;
   width: 100%;
+}
+@media screen and (max-width: 710px) {
+  .advantage__list {
+    max-width: 52rem;
+  }
+}
+@media screen and (max-width: 435px) {
+  .advantage__list {
+    max-width: 20rem;
+    justify-content: center;
+  }
 }
 .advantage__item {
   padding-top: 13.3rem;
@@ -608,6 +625,11 @@ a {
   color: #FFFFFF;
   background-position: top center;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 710px) {
+  .advantage__item {
+    padding-top: 10.3rem;
+  }
 }
 .advantage__item:first-child {
   background-image: url("../image/icons/bench.svg");
