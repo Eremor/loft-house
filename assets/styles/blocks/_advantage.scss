@@ -1,0 +1,47 @@
+.advantage {
+  
+  &__wrapper {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    justify-content: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 4rem;
+    max-width: 78rem;
+    width: 100%;
+  }
+
+  &__item {
+    padding-top: 13.3rem;
+    flex-basis: 19.4rem;
+    @include font-roboto;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    text-align: center;
+    color: $color-white-2xl;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    &:first-child {
+      background-image: url("../image/icons/bench.svg");
+    }
+
+    &:nth-child(2) {
+      background-image: url("../image/icons/building.svg");
+    }
+
+    &:nth-child(3) {
+      flex-basis: 13.4rem;
+      background-image: url("../image/icons/fountain.svg");
+    }
+
+    &:last-child {
+      flex-basis: 13.4rem;
+      background-image: url("../image/icons/bicycle.svg");
+    }
+  }
+}
