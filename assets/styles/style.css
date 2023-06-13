@@ -584,6 +584,27 @@ a {
   background-image: url("../image/icons/phone-call.svg");
 }
 
+.advantage {
+  position: relative;
+}
+.advantage::after {
+  content: "II";
+  position: absolute;
+  top: 0;
+  left: calc(50% + 555px);
+  font-family: "Playfair", serif;
+  font-weight: 700;
+  font-size: 37rem;
+  line-height: 46.3rem;
+  color: #FFFFFF;
+  opacity: 0.02;
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 1280px) {
+  .advantage::after {
+    content: "";
+  }
+}
 .advantage__wrapper {
   padding-top: 12rem;
   padding-bottom: 12rem;

@@ -1,4 +1,22 @@
 .advantage {
+  position: relative;
+
+  &::after {
+    content: "II";
+    position: absolute;
+    top: 0;
+    left: calc(50% + 555px);
+    @include font-playfair;
+    font-size: 37rem;
+    line-height: 46.3rem;
+    color: $color-white-2xl;
+    opacity: 0.02;
+    transform: translateX(-50%);
+
+    @media screen and (max-width: $media-desktop) {
+      content: "";
+    }
+  }
   
   &__wrapper {
     padding-top: 12rem;
