@@ -6,6 +6,7 @@ $color-grey: #BEBEBE;
 $color-blackout: rgba(41, 41, 41, 0.6);
 
 $gradient-top: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%);
+$gradient-card: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, $color-primary 100%);
 
 //fonts
 @mixin font-logo {
