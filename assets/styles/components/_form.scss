@@ -1,0 +1,54 @@
+.form {
+
+  &__field {
+    padding: 1.2rem;
+    height: 5rem;
+    @include font-raleway(400);
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+    text-align: center;
+    color: $color-white-2xl;
+    background-color: $color-input;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease-in;
+
+    &::placeholder {
+      color: $color-placeholder;
+    }
+
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.25)
+    }
+  }
+
+  &__text {
+    @include font-raleway(400);
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    text-align: center;
+    color: $color-placeholder;
+
+    @media screen and (max-width: 570px) {
+      order: 1;
+    }
+  }
+
+  &__btn {
+    padding: 1.2rem;
+    @include font-raleway(700);
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    text-align: center;
+    color: $color-white-2xl;
+    background-color: $color-accent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+
+    &:hover {
+      background-color: saturate($color: $color-accent, $amount: 15%);
+    }
+  }
+}
