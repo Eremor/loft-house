@@ -9,6 +9,7 @@ $color-input: rgba(255, 255, 255, 0.2);
 $gradient-top: linear-gradient(180deg, $color-primary 11.98%, rgba(45, 52, 60, 0.38) 51.04%, $color-primary 92.19%);
 $gradient-card: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, $color-primary 100%);
 $gradient-feedback: linear-gradient(180deg, $color-primary 10.42%, rgba(36, 43, 51, 0) 50.52%, $color-primary 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9));
+$gradient-video: linear-gradient(0deg, rgba(36, 43, 51, 0.8), rgba(36, 43, 51, 0.8));
 
 //fonts
 @mixin font-logo {
