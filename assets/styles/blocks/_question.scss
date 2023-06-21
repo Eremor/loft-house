@@ -1,0 +1,43 @@
+.question {
+
+  &__wrapper {
+    padding-bottom: 18rem;
+    flex-direction: column;
+
+    @media screen and (max-width: 570px) {
+      padding-bottom: 9rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 3.8rem;
+    @include font-playfair;
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+    color: $color-accent;
+
+    @media screen and (max-width: $media-tablet) {
+      margin-bottom: 5rem;
+      font-size: 2.7rem;
+      line-height: 3rem;
+    }
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem 2.7%;
+
+    @media screen and (max-width: 845px) {
+      grid-template-columns: repeat(2, 1fr);
+
+      & .form__text {
+        order: 1;
+      }
+    }
+
+    @media screen and (max-width: 570px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

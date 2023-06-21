@@ -23,6 +23,7 @@
   }
 
   &__text {
+    align-self: center;
     @include font-raleway(400);
     font-size: 1.3rem;
     line-height: 1.6rem;
