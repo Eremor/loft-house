@@ -1,3 +1,5 @@
+import { phoneMask } from './assets/scripts/phone-mask.js';
+
 const burgerBtn = document.querySelector('.burger');
 const nav = document.querySelector('.header__nav');
 
@@ -16,4 +18,26 @@ nav.addEventListener('click', (e) => {
     nav.classList.remove('nav--open');
     document.body.classList.remove('no-scroll');
   }
-})
+});
+
+/**phone mask */
+phoneMask('[data-phone]');
+
+const phoneInputs = document.querySelectorAll('[data-phone]');
+
+phoneInputs.forEach(input => {
+  input.addEventListener('input', () => {
+    if (input.value === '+') input.value = '';
+  });
+  input.addEventListener('blur', () => {
+    if (input.value === '+') input.value = '';
+  });
+});
+
+/**form stop submit */
+const forms = document.querySelectorAll('form');
+forms.forEach(form => {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+  });
+});
