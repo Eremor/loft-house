@@ -416,9 +416,12 @@ a {
     display: flex;
     justify-content: flex-end;
     background-color: rgba(41, 41, 41, 0.6);
+    z-index: 5;
+    transition: right 0.5s ease-in;
   }
   .nav--open {
     right: 0;
+    cursor: pointer;
   }
 }
 .nav__list {
@@ -434,6 +437,7 @@ a {
     width: 32rem;
     row-gap: 3rem;
     background-color: #FFFFFF;
+    cursor: default;
   }
 }
 .nav__item:hover a {
@@ -461,7 +465,7 @@ a {
   width: 3.4rem;
   height: 2.8rem;
   display: none;
-  z-index: 3;
+  z-index: 6;
   background-color: transparent;
   border: none;
   cursor: pointer;

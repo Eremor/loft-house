@@ -9,9 +9,12 @@
     display: flex;
     justify-content: flex-end;
     background-color: $color-blackout;
+    z-index: 5;
+    transition: right 0.5s ease-in;
 
     &--open {
       right: 0;
+      cursor: pointer;
     }
   }
   
@@ -26,6 +29,7 @@
       width: 32rem;
       row-gap: 3rem;
       background-color: $color-white-2xl;
+      cursor: default;
     }
   }
 
