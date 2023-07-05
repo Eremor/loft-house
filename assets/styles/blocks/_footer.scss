@@ -1,0 +1,106 @@
+.footer {
+  background-color: $color-footer;
+
+  &__wrapper {
+    padding-top: 7.2rem;
+    padding-bottom: 5rem;
+
+    @media screen and (max-width: 1050px) {
+      padding-top: 3.6rem;
+      padding-bottom: 2.5rem;
+    }
+  }
+
+  &__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+
+    @media screen and (max-width: 1050px) {
+      grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+      gap: 4rem;
+    }
+  }
+
+  &__logo {
+    margin-top: -1.2rem;
+    justify-content: flex-start;
+  }
+}
+
+.footer-nav {
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__item {
+
+    &:hover a {
+      color: $color-accent;
+    }
+
+    a {
+      @include font-raleway(400);
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+      color: $color-white-2xl;
+      letter-spacing: 0.07rem;
+      transition: color 0.3s ease-in;
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  &__item {
+    @include font-raleway(400);
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: $color-white-2xl;
+    letter-spacing: 0.07rem;
+  }
+
+  &__phone {
+    @include font-raleway(400);
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: $color-white-2xl;
+    letter-spacing: 0.07rem;
+    transition: color 0.3s ease-in;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+
+  &__email {
+    @include font-raleway(700);
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: $color-accent;
+    letter-spacing: 0.07rem;
+    transition: color 0.3s ease-in;
+
+    &:hover {
+      color: saturate($color: $color-accent, $amount: 15%);
+    }
+  }
+}
+
+.icons {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  max-width: 17.7rem;
+
+  &__item {
+    height: 2rem;
+  }
+}
