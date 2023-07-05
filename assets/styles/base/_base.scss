@@ -55,3 +55,7 @@ a {
   display: flex;
   justify-content: space-between;
 }
+
+.no-scroll {
+  overflow-y: hidden;
+}

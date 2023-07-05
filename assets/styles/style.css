@@ -367,6 +367,10 @@ a {
   justify-content: space-between;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 .logo {
   display: flex;
   flex-direction: column;
