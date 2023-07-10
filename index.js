@@ -1,4 +1,5 @@
 import { phoneMask } from './assets/scripts/phone-mask.js';
+import { createLightbox } from './assets/scripts/lightbox.js';
 
 const burgerBtn = document.querySelector('.burger');
 const nav = document.querySelector('.header__nav');
@@ -41,3 +42,12 @@ forms.forEach(form => {
     e.preventDefault();
   });
 });
+
+/**lightbox */
+const videoPlayBtn = document.querySelector('[data-youtube-lightbox]');
+
+function onYouTubeIframeAPIReady() {
+  createLightbox(videoPlayBtn);
+}
+
+onYouTubeIframeAPIReady();

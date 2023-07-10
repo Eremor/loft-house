@@ -22,7 +22,6 @@ export const phoneMask = (selector) => {
   }
 
   let inputs = document.querySelectorAll(selector);
-  console.log(this);
 
   inputs.forEach(input => {
     input.addEventListener('input', setMask);
