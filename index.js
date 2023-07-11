@@ -51,3 +51,39 @@ function onYouTubeIframeAPIReady() {
 }
 
 onYouTubeIframeAPIReady();
+
+/**Yandex map */
+const mapItem = document.querySelector('.map__item');
+
+const markerElement = document.createElement('div');
+markerElement.classList.add('map__pin');
+
+const balloon = document.querySelector('.map__balloon');
+
+let map;
+
+renderMap();
+async function renderMap() {
+  await ymaps3.ready;
+
+  map = new ymaps3.YMap(mapItem, {
+    location: {
+      center: [30.338928, 59.943543],
+      zoom: 16,
+    }
+  });
+
+  const marker = new ymaps3.YMapMarker({
+    coordinates: [30.338928, 59.943543],
+    blockEvents: true
+    
+  }, markerElement);
+
+  markerElement.addEventListener('mouseenter', () => balloon.style.display = 'flex');
+  markerElement.addEventListener('mouseleave', () => balloon.style.display = 'none');
+
+  map.addChild(new ymaps3.YMapDefaultFeaturesLayer());
+  map.addChild(marker);
+
+  map.addChild(new ymaps3.YMapDefaultSchemeLayer());
+}
