@@ -655,6 +655,11 @@ a {
   border-radius: 8px;
   transform: translate(-110%, -95%);
 }
+@media screen and (max-width: 487px) {
+  .map__balloon {
+    transform: translate(-50%, -150%);
+  }
+}
 .map__text {
   font-family: "Roboto", sans-serif;
   font-weight: 300;

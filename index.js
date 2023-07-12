@@ -55,9 +55,9 @@ onYouTubeIframeAPIReady();
 /**Yandex map */
 const mapItem = document.querySelector('.map__item');
 
-const markerElement = document.createElement('div');
-markerElement.classList.add('map__pin');
-
+// const markerElement = document.createElement('div');
+// markerElement.classList.add('map__pin');
+const markerElement = document.querySelector('.map__pin');
 const balloon = document.querySelector('.map__balloon');
 
 let map;
